@@ -1,5 +1,4 @@
 import Heading from '../components/Heading'
-import bgImg from '../public/hero3.jpg'
 import Image from 'next/image'
 import IntroOne from '../public/hero1.jpg'
 import IntroTwo from '../public/pr09.jpg'
@@ -7,15 +6,15 @@ import Camera from '../public/camera.png'
 import Ps from '../public/ps.png'
 import Edit from '../public/edit.png'
 import {FaCamera, FaCameraRetro} from 'react-icons/fa'
-
+import Footer from './layout/Footer'
 
 const About = () => {
   return(
     <main className="about w-screen relative z-20 ">
       
-        <Heading bgImg={bgImg} heading="About Me" subheading="Here are a few things you many want to know about me, besides the fact that I make awesome photos and turn basic people into models" />
+        <Heading bgImg={'/bg1.jpg'} heading="About Me" subheading="Here are a few things you many want to know about me, besides the fact that I make awesome photos and turn basic people into models" />
         
-      <div className="container mx-auto pb-28 flex flex-col justify-center items-center">
+      <div className="container mx-auto flex flex-col justify-center items-center">
         
         <div className="content mt-20">
         
@@ -61,7 +60,7 @@ const About = () => {
                 </div>
                 
                 <figcaption>
-                  <p className="text-yellow-300 dark:text-yellow-800 text-center text-2xl text-black py-3">Photoshoots</p>
+                  <p className="text-yellow-300 dark:text-yellow-800 text-center text-2xl text-yellow-200 py-3">Photoshoots</p>
                   <p className="">Capture your special moments in details for future memories. Make those moments evergreen with the right photos.</p>
                 </figcaption>
                 
@@ -74,7 +73,7 @@ const About = () => {
                 </div>
                 
                 <figcaption>
-                  <p className="text-yellow-300 dark:text-yellow-800 text-center text-2xl text-black py-3">Photoshop Manipulation</p>
+                  <p className="text-yellow-300 dark:text-yellow-800 text-center text-2xl text-yellow-200 py-3">Photoshop Manipulation</p>
                   <p className="">Turn your photos into works of art with the perfect photoshop manipulation. The opportunities are limitless.</p>
                 </figcaption>
                 
@@ -87,7 +86,7 @@ const About = () => {
                 </div>
                 
                 <figcaption>
-                  <p className="text-yellow-300 dark:text-yellow-800 text-center text-2xl text-black py-3">Photo Editing</p>
+                  <p className="text-yellow-300 dark:text-yellow-800 text-center text-2xl text-yellow-200 py-3">Photo Editing</p>
                   <p className="">Retouch your photos to see the magic that you could create with your special moments and special people.</p>
                 </figcaption>
                 
@@ -98,6 +97,7 @@ const About = () => {
           
         </div>
       </div>
+      <Footer />
     </main>
     )
 }
