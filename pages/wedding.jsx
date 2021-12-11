@@ -26,7 +26,7 @@ const couple = () => {
   }
   return(
     <div className="couple container ">
-      <Heading heading={'Couple Photography'} subheading={'Enjoy a brief but brilliant view of people falling in love and showing it. Please note that images are pulled from unsplash.com for entertainment purposes.'} bgImg={'/coupleBg.jpg'} />
+      <Heading heading={'Wedding Photography'} subheading={'Enjoy a brief but brilliant view of people falling in love and showing it. Please note that images are pulled from unsplash.com for entertainment purposes.'} bgImg={'/coupleBg.jpg'} />
       <Gallery images={coupleImages} />
       <Footer />
     </div>
