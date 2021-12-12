@@ -9,7 +9,7 @@ const services = () => {
   
   return(
     <main className="services flex flex-col justify-center items-center">
-      <Heading heading="My Services" subheading ="You can reach out to me for any of the following services, and much much more..." bgImg={'/servicebg.jpg'}/>
+      <Heading heading="Our Services" subheading ="You can reach out to us for any of the following services, and much much more..." bgImg={'/servicebg.jpg'}/>
       <div className="container mt-36 md:flex flex-wrap justify-center items-center pb-28">
         {Services.map(service => (
           <div className="group card md:w-80 relative m-10 md:m-2 px-4 py-8 text-center bg-gray-800 bg-opacity-50 rounded-lg h-80 flex flex-col justify-center items-center overflow-hidden hover:shadow-2xl" style={{backgroundImage: `url(${service.img})`, backgroundSize: 'cover ', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}} >
