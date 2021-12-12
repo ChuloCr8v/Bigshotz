@@ -1,6 +1,6 @@
 import {useTheme} from 'next-themes'
 import {FaSun, FaMoon, FaBars} from 'react-icons/fa'
-import Logo from '../../public/logo.jpg'
+import Logo from '../../public/logop.png'
 import Menu from './Menu'
 import {useState} from 'react'
 import Link from 'next/link'
@@ -28,7 +28,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <figure>
-            <img src={Logo.src} height="50" width="50" className="logo rounded-full relative z-40 " alt="Paul Ray photography logo" />
+            <img src={Logo.src} height="100" width="100" className="logo relative z-40 " alt="big shotz logo" />
           </figure>
         </Link>
         {renderThemeChanger()} 

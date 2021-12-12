@@ -1,7 +1,7 @@
 import Heading from '../components/Heading'
 import Image from 'next/image'
-import IntroOne from '../public/hero1.jpg'
-import IntroTwo from '../public/pr09.jpg'
+import IntroOne from '../public/aboutbg.jpg'
+import IntroTwo from '../public/aboutbg1.jpg'
 import Camera from '../public/camera.png'
 import Ps from '../public/ps.png'
 import Edit from '../public/edit.png'
@@ -12,7 +12,7 @@ const About = () => {
   return(
     <main className="about w-screen relative z-20 ">
       
-        <Heading bgImg={'/bg1.jpg'} heading="About Me" subheading="Here are a few things you many want to know about me, besides the fact that I make awesome photos and turn basic people into models" />
+        <Heading bgImg={'/bg1.jpg'} heading="About Us" subheading="Here are a few things you many want to know about me, besides the fact that I make awesome photos and turn basic people into models" />
         
       <div className="container mx-auto flex flex-col justify-center items-center">
         
@@ -27,22 +27,22 @@ const About = () => {
               
               <div className="absolute -bottom-4 -right-4 h-80 w-80 z-0 border-4 border-green-600 img-bg"></div>
               
-              <Image src={IntroTwo} alt="Paul Ray Photography" height="350" width="350" className="shadow-2xl" />
+              <Image src={IntroTwo} alt="Paul Ray Photography" height="500" width="350" className="shadow-2xl" />
             </div>
             
             <div className="text md:px-28 mt-20 p-8">
-             <h2 className="text-xl font-bold">Paul Ray </h2>
-              <p className="intro mt-4 ">Paul Ray stands for everything you desire and deserve in lenses. My shots are epic and my edits are tailored to match your desired outcome while still giving your picture a natural blend, ss well as touch.</p>
+             <h2 className="text-xl font-bold border-b-2 border-red-600 w-32 pb-2">Big Shotz 📸 </h2>
+              <p className="intro mt-4 ">We stand for everything you desire and deserve in lenses. Our shots are epic and our edits are tailored to match your desired outcome while still giving your picture a natural blend, as well as touch.</p>
             </div>
             
             <div className="img-container relative my-20">
-              <div className="absolute bg-gray-300 -top-10 -left-4 h-96 w-80 z-0 border-4 img-bg"></div>
+              <div className="absolute bg-gray-300 -top-10 -left-4 h-56 w-60 z-0 border-4 img-bg"></div>
               
               <div className="absolute -top-4 -left-4 h-10 w-10 rounded-full z-40 border-4 border-yellow-600 img-bg"></div>
               
               <div className="absolute -bottom-4 -right-4 h-20 w-10 z-20 border-4 border-green-600 img-bg"></div>
               
-              <Image src={IntroOne} alt="Paul Ray Photography" height="350" width="350" className="shadow-2xl" />
+              <Image src={IntroOne} className="object-fit" alt="Paul Ray Photography" height="250" width="350" className="shadow-2xl " />
             </div>
             
           </div>

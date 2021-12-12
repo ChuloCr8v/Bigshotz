@@ -16,7 +16,8 @@ const Menu = () => {
     >
       <ol className="menu w-full -mt-56 space-y-4 text-center">
         <li className="menu-item text-lg hover:scale-105 dark:hover:text-yellow-200 hover:text-yellow-800 duration-300 "><a href="/">Big Shotz 📸</a></li>
-        <li className="menu-item text-lg hover:scale-105 dark:hover:text-yellow-200 hover:text-yellow-800 duration-300"><a href="/about">About Me</a></li>
+        <li className="menu-item text-lg hover:scale-105 dark:hover:text-yellow-200 hover:text-yellow-800 duration-300"><a href="/about">About Us</a></li>
+        <li className="menu-item text-lg hover:scale-105 dark:hover:text-yellow-200 hover:text-yellow-800 duration-300"><a href="/services">Services</a></li>
         <li className=" hover:scale-105 dark:hover:text-yellow-200 hover:text-yellow-800 duration-300 menu-item text-lg">
           <div className="flex justify-center items-center " onClick ={() => setSubMenu(!subMenu)}>
             Gallery

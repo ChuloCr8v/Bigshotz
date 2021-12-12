@@ -1,6 +1,10 @@
 import {motion} from 'framer-motion'
 import Image from 'next/image'
 import {useState} from 'react'
+import ImageList from '@mui/material/ImageList'
+import ImageListItem from '@mui/material/ImageListItem'
+
+
 const Gallery = ({images}) => {
   
   const [fullImg, setFullImage] = useState('')
@@ -10,13 +14,15 @@ const Gallery = ({images}) => {
   }
   
   return(
-    <div className="gallery flex min-h-screen">
-      <div className="px-6  pt-40 flex justify-between items-center flex-wrap">
+    <div className="gallery container flex flex-col justify-center items-center min-h-screen p-4">
+      <ImageList className="mt-28 grid place-items-center" variant="masonry" gap={8} cols={3}>
         {images.map((image, index) => (
-            <img key={index} src={image.urls.regular} object-fit className="mt-2" alt="Paul Ray Photography" onClick={() => showFullImage(image.urls.regular)} />
+          <ImageListItem key={index} >
+            <img src={image.urls.regular} alt="Big Shotz Photography" onClick={() => showFullImage(image.urls.regular)} className="mt-0"/>
+          </ImageListItem>
            
         ))}
-      </div>
+      </ImageList>
        {fullImg && 
                 <div 
                   
