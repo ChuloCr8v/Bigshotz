@@ -42,7 +42,7 @@ const Hero = () => {
       </div>
 
       <Swiper
-        className=""
+        className="h-screen w-screen"
         // install Swiper modules 
         autoplay={{
           "delay": 5000,
@@ -59,7 +59,7 @@ const Hero = () => {
 
         {heroImages.map((heroImg, index) => (
           <SwiperSlide >
-            <img src={heroImg.urls.regular} key={index} className="h-screen w-screen object-cover" alt="Paul Ray Photography" />
+            <img src={heroImg.urls.regular} key={index} className="object-cover z-40 h-full w-full " alt="Paul Ray Photography" />
           </SwiperSlide>
         ))}
       </Swiper>
