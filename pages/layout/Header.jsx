@@ -2,12 +2,14 @@ import { useTheme } from 'next-themes'
 import { FaSun, FaMoon, FaBars } from 'react-icons/fa'
 import Logo from '../../public/logop.png'
 import Menu from './Menu'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
+
 const Header = () => {
 
   const { theme, setTheme, systemTheme } = useTheme()
   const [showMenu, setShowMenu] = useState(false)
+  const [headerBg, setHeaderBg] = useState(false);
 
   const renderThemeChanger = () => {
     const currentTheme = theme === 'system' ? systemTheme : theme
@@ -23,8 +25,22 @@ const Header = () => {
     }
   }
 
+  const addHeaderBg = () => {
+    if (scrollY > 100) {
+      setHeaderBg(true)
+    } else {
+      setHeaderBg(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', addHeaderBg)
+  })
+
+
+
   return (
-    <div className="header p-5 fixed w-screen z-50">
+    <div className="header duration-300 p-5 fixed w-screen z-50" style={{ background: `${headerBg ? '#000000' : 'transparent'}` }}>
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <figure>
@@ -34,7 +50,7 @@ const Header = () => {
         {renderThemeChanger()}
         <div className="nav relative z-20 ">
           <div className="xl:hidden flex flex-col justify-center items-center">
-            <FaBars className="text-3xl duration-100 relative z-50 lg:hidden" onClick={() => setShowMenu(!showMenu)} style={{ border: `${showMenu ? '1px silver solid' : ''}`, padding: `${showMenu ? '.15rem' : ''}` }} />
+            <FaBars className="text-3xl text-white duration-100 relative z-50 lg:hidden" onClick={() => setShowMenu(!showMenu)} style={{ border: `${showMenu ? '1px silver solid' : ''}`, padding: `${showMenu ? '.15rem' : ''}` }} />
             {showMenu && <Menu />}
           </div>
           <div className="hidden lg:block">
