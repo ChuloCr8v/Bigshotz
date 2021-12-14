@@ -30,7 +30,7 @@ const services = [
     details: 'Be your goofy self, party hard, do whatever it is you call fun and we will be there to add more vibes to your good times with amazing captures of your special moments.'
   }, 
   {
-    img: '/nature.jpg', 
+    img: '/naturebg.jpg', 
     title: 'Nature/Outdoor Shoots', 
     details: 'Nature is beautiful, but we can make it better with our magic. Let us sync you perfectly with the beautiful environment while passing your message accurately and magically.'
   }, 
