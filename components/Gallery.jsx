@@ -25,8 +25,7 @@ const Gallery = ({images}) => {
       </ImageList>
        {fullImg && 
                 <div 
-                  
-                  className="modal fixed z-40 top-0 min-h-screen w-screen flex flex-col justify-center items-center p-8 backdrop-filter backdrop-blur-md ">
+                  className="modal fixed z-50 top-0 min-h-screen w-screen flex flex-col justify-center items-center p-8 backdrop-filter backdrop-blur-md ">
                   <motion.img 
                   initial ={{y: -200}} 
                   animate ={{y: 0}} 

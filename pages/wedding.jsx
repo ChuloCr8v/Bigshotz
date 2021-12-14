@@ -38,11 +38,11 @@ const couple = () => {
     <div className="wedding flex flex-col justify-center items-center ">
       <Heading heading={'Wedding Photography'} subheading={'Enjoy a brief but brilliant view of people falling in love and showing it. Please note that images are pulled from unsplash.com for entertainment purposes.'} bgImg={'/coupleBg.jpg'} />
       <div className="flex flex-col justify-center items-center my-28">
-        <Pagination count={50} page={page} onChange={handleChange} />
+        <Pagination variant="outlined" color="secondary" count={50} page={page} onChange={handleChange} />
           <Gallery images={coupleImages} />
       </div>
       <div className="flex flex-col justify-center items-center my-28">
-        <Pagination count={50} page={page} onChange={handleChange} />
+        <Pagination variant="outlined" color="secondary" count={50} page={page} onChange={handleChange} />
       </div>
       <Footer />
     </div>

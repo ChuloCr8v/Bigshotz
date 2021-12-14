@@ -43,12 +43,12 @@ const nature = () => {
         subheading={'Enjoy a brief but brilliant view of nature in all glamor and shine. Please note that images are pulled from unsplash.com for entertainment purposes.'} 
         bgImg ={'/naturebg.jpg'} 
         />
-      <div className="flex flex-col justify-center items-center my-28 mx-auto">
-        <Pagination count={50} page={page} onChange={handleChange} />
+      <div className="flex flex-col justify-center items-center my-28 mx-auto ">
+        <Pagination variant="outlined" color="secondary" count={50} page={page} onChange={handleChange} />
           <Gallery images={natureImages} />
       </div>
       <div className="flex flex-col justify-center items-center my-28">
-        <Pagination count={50} page={page} onChange={handleChange} />
+        <Pagination variant="outlined" color="secondary" count={50} page={page} onChange={handleChange} />
       </div>
       <Footer />
     </div>

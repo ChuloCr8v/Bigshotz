@@ -54,11 +54,11 @@ const random = () => {
        </form>
       </div>
       <div className="flex flex-col justify-center items-center my-28">
-        <Pagination count={50} page={page} onChange={handleChange} />
+        <Pagination variant="outlined" color="secondary" count={50} page={page} onChange={handleChange} />
           <Gallery images={randomImages} />
       </div>
       <div className="flex flex-col justify-center items-center my-28">
-        <Pagination count={50} page={page} onChange={handleChange} />
+        <Pagination variant="outlined" color="secondary" count={50} page={page} onChange={handleChange} />
       </div>
       <Footer />
     </div>

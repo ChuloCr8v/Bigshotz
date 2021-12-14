@@ -38,11 +38,11 @@ const people = () => {
     <div className="people ">
       <Heading heading={'People Photography'} subheading={'Enjoy a brief but brilliant view of people from all walks of life, doing their thing or just being themselves. Please note that images are pulled from unsplash.com for entertainment purposes.'} bgImg={'/peopleBg.jpg'} />
     <div className="flex flex-col justify-center items-center my-28">
-        <Pagination count={50} page={page} onChange={handleChange} />
+        <Pagination variant="outlined" color="secondary" count={50} page={page} onChange={handleChange} />
           <Gallery images={peopleImages} />
       </div>
       <div className="flex flex-col justify-center items-center my-28">
-        <Pagination count={50} page={page} onChange={handleChange} />
+        <Pagination variant="outlined" color="secondary" count={50} page={page} onChange={handleChange} />
       </div>
       <Footer />
     </div>
